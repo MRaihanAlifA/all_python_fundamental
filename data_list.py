@@ -97,4 +97,3 @@ new_book_list = book_list[0:-1:2]
 del book_list
 for i in range(0, len(new_book_list)):
     print(new_book_list[i])
-
