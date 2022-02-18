@@ -1,4 +1,4 @@
-
+import json
 users = {
     "id": 1,
     "name": "Leanne Graham",
@@ -30,3 +30,14 @@ print(users["address"]["geo"])
 print(users["address"]["geo"]["lat"])
 print(users["address"]["geo"]["lng"])
 
+print(users)
+
+
+print('\nchange dictionary to json')
+result = json.dumps(users)
+print(result)
+
+print('\nadd file json to project')
+
+with open('result.json' ,'w') as file:
+    json.dump(users, file)
